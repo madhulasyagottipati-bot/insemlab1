@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnHub - Online Courses</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🎓 LearnHub</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#courses">Courses</a>
+            <a href="#mycourses">My Courses</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Learn New Skills Online</h1>
+
+        <p>
+            Discover the best courses, learn from experts,
+            and build your future.
+        </p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for courses..."
+            >
+
+            <button id="searchButton">Search</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+
+        <h2>Explore Categories</h2>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="All">
+                All Courses
+            </button>
+
+            <button class="category-btn" data-category="Programming">
+                Programming
+            </button>
+
+            <button class="category-btn" data-category="Design">
+                Design
+            </button>
+
+            <button class="category-btn" data-category="Data Science">
+                Data Science
+            </button>
+
+            <button class="category-btn" data-category="Business">
+                Business
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="courses">
+
+        <h2>Popular Courses</h2>
+
+        <p class="section-description">
+            Choose a course and start learning today.
+        </p>
+
+        <div class="course-container" id="courseContainer">
+            <!-- Course cards are generated using JavaScript -->
+        </div>
+
+        <p id="noCourses" class="no-courses" hidden>
+            No courses found. Try another search.
+        </p>
+
+    </section>
+
+    <!-- My Courses Section -->
+    <section class="my-courses-section" id="mycourses">
+
+        <h2>My Enrolled Courses</h2>
+
+        <p class="section-description">
+            View all the courses you have enrolled in.
+        </p>
+
+        <div id="enrolledCourses" class="enrolled-container">
+            <!-- Enrolled courses appear here -->
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🎓 LearnHub</h3>
+
+        <p>Learn Today, Lead Tomorrow.</p>
+
+        <p>&copy; 2026 LearnHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
